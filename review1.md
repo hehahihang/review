@@ -44,6 +44,17 @@
 ## Java
 ### Q3 : Java의 접근제어자 Protected는 어떤 경우에 사용하는지 설명해주세요.
 
+* 접근 제어자
+  - 클래스나 변수 메서드의 접근을 제어하기 위해 사용하는 예약어,
+  - **private, protected, default, public** 4가지 존재
+ 
+|접근 제어자|설명|
+|------|---|
+|private|테스트2|
+|protected|테스트2|
+|default|테스트2|
+|public|테스트2|
+
 
 ## Android
 ### Q3 : Android의 4대 컴포넌트와 각각의 특징을 설명해주세요.
