@@ -38,7 +38,7 @@
   - Stack이 Heap을 침범하면 **StackOverflow**, 반대의 경우 **HeapOverflow**라고 한다.
 
 ## 자료구조
-### Q2 : Stack과 Queue를 직접 구현 할때. Java의 Array와 List중 각각 어떤 것으로 구현하는 것이 좋을지 설명해주세요.
+### Q2 : Stack과 Queue를 구현 할때. Java의 Array와 List중 각각 어떤 것으로 구현하는 것이 좋을지 설명해주세요.
 * 추가할 예정! 둘다 list 사용하는게 좋아보이는데 사이즈 따라서 다른거 같기도하고
 
 ## Java
