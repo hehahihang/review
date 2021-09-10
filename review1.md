@@ -104,9 +104,48 @@
 ## ETC
 ### Q3 : REST API 개념에 대해서 설명해주세요.
 * REST API란?
-  - 웹 상에서 사용되는 리소스(자원)를 HTTP URI로 표현하고, HTTP Method로 해당 자원에 대한 CRUD를 사용하는 것을 의미한다.
-  - Client와 Server의 통신 방식 중 하나이다.
-  - 
-* REST API를 사용하는 이유?
+  - REST를 기반으로 서비스 API를 구현한 것  
+* REST란?
+  - 웹 상에서 사용되는 리소스(자원)를 HTTP URI로 표현하고, HTTP Method(GET, POST, PUT, DELETE)로 해당 자원에 대한 CRUD를 사용하는 것을 의미한다.
+  - REST는 네트워크 상에서 Client와 Server의 통신 방식 중 하나이다.  
+* REST를 사용하는 이유?
   - Application의 복잡도가 증가하며 어떻게 분리하고 통합하여 관리하느냐가 중요해졌다.  
     이를 위해 웹의 장점을 최대한으로 활용하기 위해 사용하는 아키텍쳐 스타일
+  - 애플리케이션의 분리 및 통합, 다양한 클라이언트의 등장에 대응
+  - 다양한 브라우저와 모바일기기(Android, iOS) 에서도 통신할 수 있어야하기 때문  
+* REST의 장단점
+  - 장점
+    1. HTTP 프로토콜을 사용하므로 REST API를 위한 별도 인프라 구축 X
+    2. HTTP 프로토콜을 따르는 모든 플랫폼에서 사용 가능
+    3. REST API가 의도하는 바를 명확히 나타내므로 상태, 명령을 쉽게 파악할 수 있음
+    4. 서버와 클라이언트의 역할을 명확하게 분리
+  - 단점
+    1. 표준이 존재하지 않음
+    2. 사용할 수 있는 Method가 4가지 밖에 없다.
+* REST의 특징
+  1. Client - Server 구조
+  - 자원을 가진 쪽 = Server, 자원을 요청하는 쪽 = Client
+    - Rest Server : API를 제공하고 비즈니스 로직 처리 및 연산 담당
+    - Client : 사용자 인증, context(로그인 정보, 세션) 등을 관리하고 책임진다.
+  - 서로간의 의존성이 줄어듬  
+  2. Uniform Interface
+  - URI로 지정한 리소스와 HTTP 표준에 따라 브라우저, 안드로이드, iOS 등 특정 언어나 기술에 제약 없이 모든 플랫폼에서 사용 가능  
+  3. Stateless(무상태성)
+  - HTTP는 stateless 프로토콜 이고, REST 역시 stateless이다. 
+  - Client의 Context를 서버에 따로 저장하지 않음 -> 세션, 쿠키 등의 정보를 신경쓰지 않아도 되서, 구현이 단순해진다.
+  - 서버는 Client의 요청(request)을 별개로 인식하여 처리한다.
+    - 각 API서버는 Client의 요청만을 처리한다.
+    - 요청간의 연관성이 없어야한다.
+    - 서버의 request 처리 방식에 일관성을 부여하여 부담을 줄임 -> 서비스의 자유도가 높아짐  
+  4. Cacheable(캐시 처리 가능)
+  - HTTP 프로토콜을 그대로 사용하므로 기존의 웹 인프라를 사용
+  - 대량의 요청을 효율적으로 사용하기 위한 캐시가 요구된다.
+  - 캐시를 사용하여 응답시간이 빨라지고 Rest Server의 트랜잭션이 발생하지 않음 -> 전체 응답시간, 성능, 서버 자원 이용률 향상
+  - 캐싱 구현은 Last-Modified 태그나 E-tag를 사용하여 가능  
+  5. Layerd System(계층화)
+  - API서버는 순수 비즈니스 로직만을 수행
+  - 앞단에 사용자 인증, 로드밸런싱, 암호화, 보안(SSL) 등을 추가하여 사용이 가능 -> 구조상 유연성 증가
+  - Proxy 사용 가능, 더 나아가서는 API gateway 등을 활용하여 Micro Service Architecture로도 구현이 가능  
+  6. Self-descriptiveness (자체 표현 구조)
+  - HTTP Method(GET,POST,PUT,DELETE)+ URI 로 이루어져있다.
+  - Json, XML을 통해 메시지를 전달하고, REST API만을 보고 행위를 쉽게 이해할 수 있다.
