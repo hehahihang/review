@@ -38,11 +38,11 @@
   - Stack이 Heap을 침범하면 **StackOverflow**, 반대의 경우 **HeapOverflow**라고 한다.    
 
 ## 자료구조
-### Q2 : Stack과 Queue를 구현 할때. Java의 Array와 List중 각각 어떤 것으로 구현하는 것이 좋을지 설명해주세요.
+### :arrow_forward: Stack과 Queue를 구현 할때. Java의 Array와 List중 각각 어떤 것으로 구현하는 것이 좋을지 설명해주세요.
 * 추가할 예정! 둘다 list 사용하는게 좋아보이는데 사이즈 따라서 다른거 같기도하고
 
 ## Java
-### Q3 : Java의 접근제어자 Protected는 어떤 경우에 사용하는지 설명해주세요.
+### :arrow_forward: Java의 접근제어자 Protected는 어떤 경우에 사용하는지 설명해주세요.
 
 * 접근 제어자
   - 클래스나 변수 메서드의 접근을 제어하기 위해 사용하는 예약어,
@@ -57,7 +57,7 @@
 
 
 ## Android
-### Q3 : Android의 4대 컴포넌트와 각각의 특징을 설명해주세요.
+### :arrow_forward: Android의 4대 컴포넌트와 각각의 특징을 설명해주세요.
 
 * 컴포넌트
   - 컴포넌트는 하나의 독립된 형태로 존재하여, 각 역할을 수행함  
@@ -69,11 +69,11 @@
 |**브로드캐스트 리시버(BroadCast Receiver)**|단말기에서 발생하는 다양한 이벤트, 정보를 처리|
 |**Content Provider**|앱 사이의 데이터 공유를 위한 인터페이스 제공|
 
-### Q3 : 본인이 개발한 안드로이드 앱에서 사용한 컴포넌트를 설명해주세요.
-### Q3 : Android 생명주기(LifeCycle)에 대해서 설명해주세요.
+### :arrow_forward: 본인이 개발한 안드로이드 앱에서 사용한 컴포넌트를 설명해주세요.
+### :arrow_forward: Android 생명주기(LifeCycle)에 대해서 설명해주세요.
 
 ## Git
-### Q : Git 명령어중 stash는 어떤 경우에 사용하는지 설명해주세요.  
+### :arrow_forward: Git 명령어중 stash는 어떤 경우에 사용하는지 설명해주세요.  
 [stash] 
   * 아직 마무리하지 않은 작업을 Stack에 잠시 저장할 수 있도록 하는 명령어이다  
   * 완료되지 않은 commit 하지 않고 나중에 꺼내와 다시 마무리할 수 있다
