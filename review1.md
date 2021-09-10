@@ -104,7 +104,7 @@
 ## ETC
 ### Q3 : REST API 개념에 대해서 설명해주세요.
 * REST API란?
-  - REST를 기반으로 서비스 API를 구현한 것  
+  - REST를 기반으로 서비스 API를 구현한 것<br><br>
 * REST란?
   - 웹 상에서 사용되는 리소스(자원)를 HTTP URI로 표현하고, HTTP Method(GET, POST, PUT, DELETE)로 해당 자원에 대한 CRUD를 사용하는 것을 의미한다.
   - REST는 네트워크 상에서 Client와 Server의 통신 방식 중 하나이다<br><br>
