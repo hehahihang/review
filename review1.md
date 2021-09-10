@@ -94,7 +94,7 @@
   * git stash 명령어를 사용하면 워킹 디렉토리에서 수정한 파일들만 저장한다
   * stash란 아래에 해당하는 파일들을 보관해두는 장소이다.
     1. Modified 이면서 Tracked 상태인 파일
-      - Tracked 상태인 파일을 이미 수정한 경우 (Tracked : 과거에 이미 commit하여 스냅샷에 넣어진 관리 대상 상태의 파일)
+      - Tracked 상태인 파일을 이미 수정한 경우 (Tracked : 과거에 이미 commit하여 스냅샷에 넣어진 관리 대상 상태의 파일)  
     2. Staging Area에 있는 파일(Staged 상태인 파일)
       - git add 명령을 실행한 경우
       - Staged 상태로 만들려면 git add 명령을 실행해야 한다
@@ -103,3 +103,9 @@
 
 ## ETC
 ### Q3 : REST API 개념에 대해서 설명해주세요.
+* REST API란?
+  - 웹 상에서 사용되는 리소스(자원)를 HTTP URI로 표현하고, HTTP Method로 해당 자원에 대한 CRUD를 사용하는 것을 의미한다.
+  - Client와 Server의 통신 방식 중 하나이다.
+  - 
+* REST API를 사용하는 이유?
+  - Application의 복잡도가 증가하며 어떻게 분리하고 통합하여 관리하느냐가 중요해졌다.  이를 위해 웹의 장점을 최대한으로 활용하기 위해 사용하는 아키텍쳐 스타일
