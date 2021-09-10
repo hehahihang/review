@@ -127,25 +127,25 @@
     - 자원을 가진 쪽 = Server, 자원을 요청하는 쪽 = Client
       - Rest Server : API를 제공하고 비즈니스 로직 처리 및 연산 담당
       - Client : 사용자 인증, context(로그인 정보, 세션) 등을 관리하고 책임진다.
-    - 서로간의 의존성이 줄어듬  
+    - 서로간의 의존성이 줄어듬<br>
   2. Uniform Interface  
-    - URI로 지정한 리소스와 HTTP 표준에 따라 브라우저, 안드로이드, iOS 등 특정 언어나 기술에 제약 없이 모든 플랫폼에서 사용 가능  
+    - URI로 지정한 리소스와 HTTP 표준에 따라 브라우저, 안드로이드, iOS 등 특정 언어나 기술에 제약 없이 모든 플랫폼에서 사용 가능<br>  
   3. Stateless(무상태성)  
     - HTTP는 stateless 프로토콜 이고, REST 역시 stateless이다. 
     - Client의 Context를 서버에 따로 저장하지 않음 -> 세션, 쿠키 등의 정보를 신경쓰지 않아도 되서, 구현이 단순해진다.
     - 서버는 Client의 요청(request)을 별개로 인식하여 처리한다.
       - 각 API서버는 Client의 요청만을 처리한다.
       - 요청간의 연관성이 없어야한다.
-      - 서버의 request 처리 방식에 일관성을 부여하여 부담을 줄임 -> 서비스의 자유도가 높아짐  
+      - 서버의 request 처리 방식에 일관성을 부여하여 부담을 줄임 -> 서비스의 자유도가 높아짐<br>  
   4. Cacheable(캐시 처리 가능)  
     - HTTP 프로토콜을 그대로 사용하므로 기존의 웹 인프라를 사용
     - 대량의 요청을 효율적으로 사용하기 위한 캐시가 요구된다.
     - 캐시를 사용하여 응답시간이 빨라지고 Rest Server의 트랜잭션이 발생하지 않음 -> 전체 응답시간, 성능, 서버 자원 이용률 향상
-    - 캐싱 구현은 Last-Modified 태그나 E-tag를 사용하여 가능  
+    - 캐싱 구현은 Last-Modified 태그나 E-tag를 사용하여 가능<br>  
   5. Layerd System(계층화)  
     - API서버는 순수 비즈니스 로직만을 수행
     - 앞단에 사용자 인증, 로드밸런싱, 암호화, 보안(SSL) 등을 추가하여 사용이 가능 -> 구조상 유연성 증가
-    - Proxy 사용 가능, 더 나아가서는 API gateway 등을 활용하여 Micro Service Architecture로도 구현이 가능  
+    - Proxy 사용 가능, 더 나아가서는 API gateway 등을 활용하여 Micro Service Architecture로도 구현이 가능<br>  
   6. Self-descriptiveness (자체 표현 구조)  
     - HTTP Method(GET,POST,PUT,DELETE)+ URI 로 이루어져있다.
-    - Json, XML을 통해 메시지를 전달하고, REST API만을 보고 행위를 쉽게 이해할 수 있다.
+    - Json, XML을 통해 메시지를 전달하고, REST API만을 보고 행위를 쉽게 이해할 수 있다.<br>
