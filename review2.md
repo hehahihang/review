@@ -24,17 +24,36 @@
 ## Java
 ### :arrow_forward: Java의 자료구조
 
-### :arrow_forward: 반복문 vs 재귀 (팩토리얼 구현하기)
+### :arrow_forward: 반복문 vs 재귀함수 (팩토리얼 구현하기)
 * 반복문
- ```Java
+- 메모리 : Heap 메모리 사용
+- 속도 : 빠름
+```Java
  public static int factorial(int n){
-  int sum = 1;
-  for(int i=2;i<=n;i++)
-  sum *= i;
-  return sum;
+    int sum = 1;
+    for(int i=2;i<=n;i++)
+        sum *= i;
+    return sum;
  }
- ```
+```
 
+* 재귀함수
+- 메모리 : Stack 메모리 사용, 함수가 호출될 때 마다 새 로컬변수와 매개변수 집합을 저장
+- 속도 : 느림, n 값이 커질 수록 호출하는 함수가 많아져 비효율적이다.
+```Java
+  public static int factorial(int n){
+      if(n==1) return 1;
+      else return n * factorial(n-1);
+  }
+```
+
+⭐ **재귀호출이 중요한 이유**
+* 변수 사용을 줄일 수 있다
+  - 변수 사용을 줄인다는 것은 변수가 사용하는 메모리를 줄인다는 것이 아니라, mutable state(변경 가능한 상태)를  
+    제거하여 프로그램 오류 발생 가능성을 줄인다는 것이다. mutable state를 최대한 피하는 것은  
+    변수의 수를 줄이는 것과 변수가 가질 수 있는 값의 종류 or 범위를 정확하게 제한하는 것이다.  
+    ex) f(n)을 구하기 위해서 f(n-2), f(n-1)이라는 자기자신의 함수를 재귀적으로 매개변수만 바꾸어 호출한다  
+    
 
 ## WEB
 ### :arrow_forward: 50억개의 URL을 중복 제거하고 크롤링하기
