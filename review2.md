@@ -23,6 +23,9 @@
 
 ## Java
 ### :arrow_forward: Java의 자료구조
+- 무 많아서 잠시 보류..
+* Map
+* List
 
 ### :arrow_forward: 반복문 vs 재귀함수 (팩토리얼 구현하기)
 * 반복문
