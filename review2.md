@@ -26,14 +26,14 @@
 
 ### :arrow_forward: 반복문 vs 재귀 (팩토리얼 구현하기)
 * 반복문
-  '''Java
+ ```Java
     public static int factorial(int n){
       int sum = 1;
       for(int i=2;i<=n;i++)
         sum *= i;
       return sum;
      }
-  '''
+  ```
 
 
 ## WEB
